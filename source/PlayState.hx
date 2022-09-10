@@ -5300,6 +5300,7 @@ class PlayState extends MusicBeatState
 		lastStepHit = curStep;
 		setOnLuas('curStep', curStep);
 		callOnLuas('onStepHit', []);
+		callOnHScripts('stepHit', [curStep]);
 	}
 
 	var lightningStrikeBeat:Int = 0;
